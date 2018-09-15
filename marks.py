@@ -2,11 +2,10 @@ marks=[{'school_class': '4a', 'scores': [5,5,5,5,5]}, {'school_class': '5a', 'sc
 sum_for_school=0
 for dicts in marks:
     sum_for_class=0
-    a=dicts
-    for score in a["scores"]:
+    for score in dicts["scores"]:
         sum_for_class = sum_for_class + score
-    middle_for_class = sum_for_class/len(a["scores"])
-    print ("Средняя оценка в " + str(a["school_class"]) + " " + str(middle_for_class))
+    middle_for_class = sum_for_class/len(dicts["scores"])
+    print ("Средняя оценка в " + str(dicts["school_class"]) + " " + str(middle_for_class))
     sum_for_school = sum_for_school + middle_for_class
 middle_for_school = sum_for_school/len(marks)   
 print ("Средняя оценка в школе " + str(middle_for_school))

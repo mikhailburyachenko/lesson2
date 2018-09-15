@@ -1,9 +1,9 @@
 def get_sum(num_one, num_two):
 
-    try:
+    #try:
         return int(num_one)+int(num_two)
-    except ValueError:
-        return "Введен неверный тип данных"
+    #except (ValueError, TypeError):
+     #   return "Введен неверный тип данных"
     
-a=get_sum("sd", 4)
+a=get_sum('sf', 4)
 print(a)
